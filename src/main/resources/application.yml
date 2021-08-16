@@ -1,0 +1,50 @@
+spring:
+  mvc:
+    servlet:
+      load-on-startup: 1
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/graduation_design?rewriteBatchedStatements=true&useUnicode=true&characterEncoding=UTF-8&serverTmezone=Asia/Shanghai
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+
+    # 數據源初始連接數
+    initialSize: 5
+    # 最小空閒數
+    minIdle: 5
+    # 最大活躍數
+    maxActive: 20
+    # 配置連接超時時間
+    maxWait: 60000
+    timeBetweenEvictionRunsMills: 60000
+    minEvictableIdleTimeMills: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+
+    # 配置后，druid控制台才能監控sql語句執行
+    # 配置监控统计拦截的filters, stat:监控统计  log4j:日志记录  wall:防御sql注入
+    filters: stat,wall,log4j
+    maxPoolPreparedStatementPerConnectionSize: 20
+    userGlobalDataSourceStat: true
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMilils=500
+
+logging:
+  level:
+    com.wcy: debug
+  file:
+    path: "D:/Desktop/test.log"
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.wcy.entity
+  configuration:
+    map-underscore-to-camel-case: true
+
+server:
+  servlet:
+    context-path: /express_help
+
