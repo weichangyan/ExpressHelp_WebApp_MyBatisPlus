@@ -27,8 +27,8 @@ public class SwaggerConfig {
         return new ApiInfoBuilder()
                 .title("集成Swagger2构建RESTful APIs")
                 .description("集成Swagger2构建RESTful APIs")
-                .termsOfServiceUrl("https://github.com/ASOUL-Bella")
-                .contact(new Contact("wcy", "https://github.com/ASOUL-Bella", "changyan_wei@163.com"))
+                .termsOfServiceUrl("https://github.com/weichangyan")
+                .contact(new Contact("wcy", "https://github.com/weichangyan", "changyan_wei@163.com"))
                 .version("1.0.0")
                 .build();
     }

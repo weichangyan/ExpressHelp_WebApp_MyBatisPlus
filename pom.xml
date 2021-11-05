@@ -13,6 +13,8 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>MPDemo</name>
     <description>Demo project for Spring Boot</description>
+    <!-- 打包成jar包 -->
+    <packaging>jar</packaging>
     <properties>
         <java.version>11</java.version>
         <MP.version>3.4.3.1</MP.version>
@@ -95,6 +97,13 @@
             <artifactId>velocity-engine-core</artifactId>
             <version>2.3</version>
         </dependency>
+        <!--shiro-->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring</artifactId>
+            <version>1.7.1</version>
+        </dependency>
+
 
 
 

@@ -35,8 +35,6 @@ spring:
 logging:
   level:
     com.wcy: debug
-  file:
-    path: "D:/Desktop/test.log"
 
 mybatis-plus:
   mapper-locations: classpath:mapper/*.xml
