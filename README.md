@@ -1,0 +1,2 @@
+# ExpressHelp_WebApp_MyBatisPlus
+这是高校校内快递代取小程序的服务端代码，代码采用RESTful风格写法，使用spring boot框架，表示层使用springmvc，持久层使用mybatis，并且使用了mybatis-plus工具，小程序前端通过AJAX请求服务端api，获取数据。
